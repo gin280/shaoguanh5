@@ -1,0 +1,248 @@
+/* line 4, ../sass/test.scss */
+body {
+  font-family: Georgia,serif;
+  background-color: #ddd;
+  font-weight: 400;
+  font-size: 15px;
+  color: #333;
+  overflow: hidden;
+}
+
+/* line 14, ../sass/test.scss */
+a {
+  color: #555;
+}
+
+/* line 17, ../sass/test.scss */
+.container {
+  background-color: cyan;
+}
+
+/* line 22, ../sass/test.scss */
+.st-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 28, ../sass/test.scss */
+.st-container input, .st-container a {
+  width: 20%;
+  height: 34px;
+  line-height: 34px;
+  position: fixed;
+  bottom: 0;
+}
+/* line 35, ../sass/test.scss */
+.st-container input {
+  opacity: 0.8;
+  z-index: 1000;
+  cursor: pointer;
+}
+/* line 39, ../sass/test.scss */
+.st-container input:hover + a {
+  background-color: #ad244f;
+}
+/* line 43, ../sass/test.scss */
+.st-container a {
+  z-index: 10;
+  font-weight: 700;
+  font-size: 17px;
+  background-color: #e23a6e;
+  text-align: center;
+  color: #fff;
+  -moz-box-shadow: 1px 1px 1px rgba(151, 24, 64, 0.2);
+  -webkit-box-shadow: 1px 1px 1px rgba(151, 24, 64, 0.2);
+  box-shadow: 1px 1px 1px rgba(151, 24, 64, 0.2);
+}
+/* line 53, ../sass/test.scss */
+.st-container #st-control-1, .st-container #st-control-1 + a {
+  left: 0%;
+}
+/* line 56, ../sass/test.scss */
+.st-container #st-control-2, .st-container #st-control-2 + a {
+  left: 20%;
+}
+/* line 59, ../sass/test.scss */
+.st-container #st-control-3, .st-container #st-control-3 + a {
+  left: 40%;
+}
+/* line 62, ../sass/test.scss */
+.st-container #st-control-4, .st-container #st-control-4 + a {
+  left: 60%;
+}
+/* line 65, ../sass/test.scss */
+.st-container #st-control-5, .st-container #st-control-5 + a {
+  left: 80%;
+}
+
+/* line 70, ../sass/test.scss */
+.st-container > input:checked + a {
+  background-color: #821134;
+}
+
+/* line 74, ../sass/test.scss */
+.st-container input:checked + a:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  height: 0;
+  width: 0;
+  border-bottom: 20px solid #821134;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  margin-left: -20px;
+}
+
+/* line 85, ../sass/test.scss */
+.st-scroll, .st-panel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 91, ../sass/test.scss */
+.st-scroll {
+  left: 0;
+  top: 0;
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  -moz-transition: ease-in-out 0.6s;
+  -o-transition: ease-in-out 0.6s;
+  -webkit-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
+}
+
+/* line 98, ../sass/test.scss */
+.st-panel {
+  overflow: hidden;
+  background-color: #fff;
+}
+/* line 101, ../sass/test.scss */
+.st-panel:nth-child(2n) {
+  background-color: #1BB23D;
+}
+
+/* line 106, ../sass/test.scss */
+#st-control-1:checked ~ .st-scroll {
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+/* line 110, ../sass/test.scss */
+#st-control-2:checked ~ .st-scroll {
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 114, ../sass/test.scss */
+#st-control-3:checked ~ .st-scroll {
+  -moz-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  -webkit-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+/* line 118, ../sass/test.scss */
+#st-control-4:checked ~ .st-scroll {
+  -moz-transform: tanslateY(-300%);
+  -ms-transform: tanslateY(-300%);
+  -webkit-transform: tanslateY(-300%);
+  transform: tanslateY(-300%);
+}
+
+/* line 122, ../sass/test.scss */
+#st-control-5:checked ~ .st-scroll {
+  -moz-transform: translateY(-400%);
+  -ms-transform: translateY(-400%);
+  -webkit-transform: translateY(-400%);
+  transform: translateY(-400%);
+}
+
+/* line 126, ../sass/test.scss */
+.st-desc {
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  margin-left: -100px;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 139, ../sass/test.scss */
+article {
+  margin: 0 auto;
+  margin-left: 400px;
+}
+/* line 142, ../sass/test.scss */
+article img {
+  -moz-animation: breath 2s infinite;
+  -webkit-animation: breath 2s infinite;
+  animation: breath 2s infinite;
+}
+
+@-moz-keyframes breath {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes breath {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes breath {
+  0% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
